@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "faraway:block/resin_block"
+    }
+  }
+}
