@@ -17,16 +17,21 @@ public class FarawayCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FarawayLWMod.MOD_ID);
 
     public static final Supplier<CreativeModeTab> TROPIC_ITEMS_TAB = CREATIVE_MODE_TAB.register("tropic_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(FarawayItems.RESIN.get()))
-                    .title(Component.translatable("creativetab.tutorialmod.tropic_items"))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(FarawayItems.MANGO.get()))
+                    .title(Component.translatable("creativetab.faraway.tropic_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(FarawayItems.RESIN);
+                        output.accept(FarawayItems.MANGO);
+                        output.accept(FarawayItems.MANGO_SEED);
+                        output.accept(FarawayItems.COCONUT);
+                        output.accept(FarawayItems.COCONUT_SHELL);
+                        output.accept(FarawayItems.FRESH_COCONUT_SHELL);
                     }).build());
 
     public static final Supplier<CreativeModeTab> TROPIC_BLOCK_TAB = CREATIVE_MODE_TAB.register("tropic_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(FarawayBlocks.RESIN_BLOCK))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(FarawayLWMod.MOD_ID, "tropic_items_tab"))
-                    .title(Component.translatable("creativetab.tutorialmod.tropic_blocks"))
+                    .title(Component.translatable("creativetab.faraway.tropic_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(FarawayBlocks.RESIN_BLOCK);
                         output.accept(FarawayBlocks.RESIN_ORE);

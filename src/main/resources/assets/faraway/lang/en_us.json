@@ -8,5 +8,15 @@
   "item.faraway.resin": "Resin",
 
   "item.faraway.mango": "Mango",
-  "item.faraway.mango_seed": "Mango Seed"
+  "item.faraway.mango_seed": "Mango Seed",
+  "item.faraway.mango": "Mango",
+  "item.faraway.coconut": "Coconut",
+  "item.faraway.coconut_shell": "Coconut Shell",
+  "item.faraway.fresh_coconut_shell": "Coconut Flesh",
+
+  "tooltip.faraway.mango_seed.tooltip": "A mango seed. Plant it to grow a Mango Tree.",
+  "tooltip.faraway.mango.tooltip": "A mango. Tasty. MANGO MANGO MANGO MA-",
+  "tooltip.faraway.resin.tooltip": "\"A strange yellow mineral, similar to resin found on Earth. I feel it speaks to me. Maybe... the Ancients used it in their technology?\"",
+  "tooltip.faraway.coconut.tooltip": "the coco nut is a big brown nut",
+  "tooltip.faraway.coconut_flesh.tooltip": "The juicy flesh of a coconut, fresh in the shell. A sweet bounty of nature!"
 }

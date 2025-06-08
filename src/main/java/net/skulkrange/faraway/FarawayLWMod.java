@@ -68,10 +68,6 @@ public class FarawayLWMod {
             event.accept(FarawayItems.MANGO);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.SEARCH) {
-            event.accept(FarawayItems.MANGO_SEED);
-        }
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
