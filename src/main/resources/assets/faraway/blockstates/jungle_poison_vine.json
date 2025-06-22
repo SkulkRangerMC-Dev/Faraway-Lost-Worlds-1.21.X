@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "faraway:block/poison_jungle_vine",
+      "x": 90
+    }
+  }
+}

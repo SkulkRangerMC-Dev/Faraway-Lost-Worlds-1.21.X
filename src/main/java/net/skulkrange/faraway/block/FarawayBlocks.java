@@ -4,6 +4,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CactusBlock;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.skulkrange.faraway.FarawayLWMod;
+import net.skulkrange.faraway.block.custom.PoisonVineBlock;
 import net.skulkrange.faraway.item.FarawayItems;
 
 import java.util.function.Supplier;
@@ -26,6 +28,12 @@ public class FarawayBlocks {
     public static final DeferredBlock<Block> RESIN_ORE = registerBlock("resin_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> JUNGLE_POISON_VINE = registerBlock("jungle_poison_vine",
+            () -> new CactusBlock(BlockBehaviour.Properties.of().
+                    strength(3f).sound(SoundType.VINE)));
+
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

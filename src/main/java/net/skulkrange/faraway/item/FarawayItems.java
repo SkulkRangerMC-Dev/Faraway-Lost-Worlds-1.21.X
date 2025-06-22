@@ -14,6 +14,16 @@ import java.util.List;
 public class FarawayItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FarawayLWMod.MOD_ID);
 
+
+    public static final DeferredItem<Item> MANGO_SEED = ITEMS.register("mango_seed",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.faraway.mango_seed.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
     public static final DeferredItem<Item> RESIN = ITEMS.register("resin",
             () -> new Item(new Item.Properties()) {
                 @Override
@@ -44,14 +54,6 @@ public class FarawayItems {
                 }
             });
 
-    public static final DeferredItem<Item> MANGO_SEED = ITEMS.register("mango_seed",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    tooltipComponents.add(Component.translatable("tooltip.faraway.mango_seed.tooltip"));
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
     public static final DeferredItem<Item> MANGO = ITEMS.register("mango",
             () -> new Item(new Item.Properties().food(FarawayFoodProperties.MANGO)) {
                 @Override
