@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "faraway:block/jungle_poison_vine"
+    "layer0": "faraway:item/coconut"
   }
 }

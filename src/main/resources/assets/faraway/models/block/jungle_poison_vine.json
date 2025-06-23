@@ -1,8 +1,9 @@
 {
-  "ambientocclusion": false,
+  "ambientocclusion": true,
+  "render_type": "cutout",
   "textures": {
-    "particle": "block/jungle_poison_vine",
-    "vine": "block/jungle_poison_vine"
+    "particle": "faraway:block/jungle_poison_vine",
+    "vine": "faraway:block/jungle_poison_vine"
   },
   "elements": [
     {   "from": [ 0, 0, 0.8 ],

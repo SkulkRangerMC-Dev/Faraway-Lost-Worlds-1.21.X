@@ -30,8 +30,8 @@ public class FarawayBlocks {
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> JUNGLE_POISON_VINE = registerBlock("jungle_poison_vine",
-            () -> new CactusBlock(BlockBehaviour.Properties.of().
-                    strength(3f).sound(SoundType.VINE)));
+            () -> new PoisonVineBlock(BlockBehaviour.Properties.of().noOcclusion()
+                    .strength(3f).sound(SoundType.VINE)));
 
 
 
