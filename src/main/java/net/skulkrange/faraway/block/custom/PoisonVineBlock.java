@@ -25,13 +25,14 @@ public class PoisonVineBlock extends Block {
     }
 
     @Override
-    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        super.stepOn(level, pos, state, entity);
+    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity)
+    {
+        super.entityInside(state, level, pos, entity);
 
         if (!level.isClientSide && entity instanceof LivingEntity livingEntity) {
             livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 0));
 
-            System.out.println("Poison vine stepped on by: " + entity.getName().getString());
+            System.out.println("entity inside: " + entity.getName().getString());
         }
     }
 

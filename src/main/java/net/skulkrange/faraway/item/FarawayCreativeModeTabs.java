@@ -26,6 +26,7 @@ public class FarawayCreativeModeTabs {
                         output.accept(FarawayItems.COCONUT);
                         output.accept(FarawayItems.COCONUT_SHELL);
                         output.accept(FarawayItems.FRESH_COCONUT_SHELL);
+                        output.accept(FarawayItems.PEARL);
                     }).build());
 
     public static final Supplier<CreativeModeTab> TROPIC_BLOCK_TAB = CREATIVE_MODE_TAB.register("tropic_blocks_tab",
@@ -35,6 +36,15 @@ public class FarawayCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(FarawayBlocks.RESIN_BLOCK);
                         output.accept(FarawayBlocks.RESIN_ORE);
+
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> JUNGLE_BLOCK_TAB = CREATIVE_MODE_TAB.register("jungle_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(FarawayBlocks.JUNGLE_POISON_VINE))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(FarawayLWMod.MOD_ID, "tropic_blocks_tab"))
+                    .title(Component.translatable("creativetab.faraway.jungle_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(FarawayBlocks.JUNGLE_POISON_VINE);
 
                     }).build());
 

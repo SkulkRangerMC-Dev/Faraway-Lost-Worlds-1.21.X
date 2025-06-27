@@ -1,13 +1,15 @@
 {
   "creativetab.faraway.tropic_items": "Tropic Items",
   "creativetab.faraway.tropic_blocks": "Tropic Blocks",
+  "creativetab.faraway.jungle_blocks": "Jungle Blocks",
 
   "block.faraway.resin_ore": "Resin Ore",
   "block.faraway.resin_block": "Resin Block",
   "block.faraway.jungle_poison_vine": "Lush Poison Vine",
 
   "item.faraway.resin": "Resin",
-
+  "item.faraway.bunch_of_pearls": "Bunch of Pearls",
+  "item.faraway.pearl": "Pearl",
   "item.faraway.mango": "Mango",
   "item.faraway.mango_seed": "Mango Seed",
   "item.faraway.coconut": "Coconut",
@@ -18,5 +20,7 @@
   "tooltip.faraway.mango.tooltip": "A mango. Tasty. MANGO MANGO MANGO MA-",
   "tooltip.faraway.resin.tooltip": "\"A strange yellow mineral, similar to resin found on Earth. I feel it speaks to me. Maybe... the Ancients used it in their technology?\"",
   "tooltip.faraway.coconut.tooltip": "the coco nut is a big brown nut",
-  "tooltip.faraway.coconut_flesh.tooltip": "The juicy flesh of a coconut, fresh in the shell. A sweet bounty of nature!"
+  "tooltip.faraway.coconut_flesh.tooltip": "The juicy flesh of a coconut, fresh in the shell. A sweet bounty of nature!",
+  "tooltip.faraway.pearl.tooltip": "A pearl. You can trade it with the people in the Faraway realms for some sweet new stuff.",
+  "tooltip.faraway.pearlbunch.tooltip": "A bunch of pearls. Neat-o."
 }

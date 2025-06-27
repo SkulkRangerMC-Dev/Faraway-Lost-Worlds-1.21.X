@@ -15,6 +15,24 @@ public class FarawayItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FarawayLWMod.MOD_ID);
 
 
+    public static final DeferredItem<Item> PEARL = ITEMS.register("pearl",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.faraway.pearl.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredItem<Item> BUNCH_OF_PEARLS = ITEMS.register("bunch_of_pearls",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.faraway.pearlbunch.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
     public static final DeferredItem<Item> MANGO_SEED = ITEMS.register("mango_seed",
             () -> new Item(new Item.Properties()) {
                 @Override
