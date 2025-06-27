@@ -22,11 +22,11 @@ import java.util.OptionalLong;
 
 public class FarawayDimensions {
     public static final ResourceKey<LevelStem> FARAWAY_DIM_KEY = ResourceKey.create(Registries.LEVEL_STEM,
-            new ResourceLocation(FarawayLWMod.MOD_ID, "faraway_dim"));
+            ResourceLocation.fromNamespaceAndPath(FarawayLWMod.MOD_ID, "faraway_dim"));
     public static final ResourceKey<Level> FARAWAY_DIM_LEVEL_KEY = ResourceKey.create(Registries.DIMENSION,
-            new ResourceLocation(FarawayLWMod.MOD_ID, "faraway_dim"));
+            ResourceLocation.fromNamespaceAndPath(FarawayLWMod.MOD_ID, "faraway_dim"));
     public static final ResourceKey<DimensionType> FARAWAY_DIM_TYPE = ResourceKey.create(Registries.DIMENSION_TYPE,
-            new ResourceLocation(FarawayLWMod.MOD_ID, "faraway_dim_type"));
+            ResourceLocation.fromNamespaceAndPath(FarawayLWMod.MOD_ID, "faraway_dim"));
 
 
     public static void bootstrapType(BootstrapContext<DimensionType> context) {
